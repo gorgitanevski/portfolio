@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { ButtonCart } from "./Heading";
 import { BsGithub, BsLink45Deg } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
