@@ -9,8 +9,9 @@ const ContactSection = () => {
     setLoaded(true);
   }, []);
 
-  const handleSubmit = (formData) => {
-    console.log(formData);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("test");
   };
 
   return (
