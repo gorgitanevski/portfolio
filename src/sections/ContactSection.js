@@ -18,11 +18,11 @@ const ContactSection = () => {
         "W8NIJKAtJx8kjLbq9"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          alert("the message has been successfully sent");
         },
         (error) => {
-          console.log(error.text);
+          alert(error.text);
         }
       );
   };
