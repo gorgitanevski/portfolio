@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ContactMap from "../components/ContactMap";
-import { NetlifyForm, NetlifyInput } from "react-netlify-form";
 
 const ContactSection = () => {
   const [loaded, setLoaded] = useState(false);
