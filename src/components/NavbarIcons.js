@@ -18,7 +18,7 @@ const NavbarIcons = ({ display }) => {
 
   return (
     <div
-      className={`text-4xl text-white flex  flex-col lg:flex-row gap-3 sm:${display}`}
+      className={`text-4xl text-white flex  flex-col lg:flex-row gap-3  sm:${display}`}
     >
       {links.map((link) => {
         return (
