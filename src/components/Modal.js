@@ -1,16 +1,8 @@
-const Modal = ({ isOpen, onClose, children }) => {
-  return (
-    isOpen && (
-      <div className="modal">
-        <div className="modal-content">
-          {children}
-          <button className="close-button" onClick={onClose}>
-            Close
-          </button>
-        </div>
-      </div>
-    )
-  );
+import React from "react";
+import ReactDOM from "react-dom";
+
+const Modal = ({ children }) => {
+  return <div className="absolute bg-red-500 h-screen w-full">{children}</div>;
 };
 
 export default Modal;

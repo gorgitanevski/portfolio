@@ -1,47 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ContactMap from "../components/ContactMap";
-// import { Navigate } from "react-router-dom";
-import Modal from "../components/Modal";
+import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
   const [loaded, setLoaded] = useState(false);
 
-  const [isModalOpen, setModalOpen] = useState(false);
+  const form = useRef();
 
-  // const handleOpenModal = () => {
-  //   setModalOpen(true);
-  // };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const handleCloseModal = () => {
-    setModalOpen(false);
+    emailjs
+      .sendForm(
+        "service_0klm188",
+        "template_rj2j29x",
+        form.current,
+        "W8NIJKAtJx8kjLbq9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   useEffect(() => {
     setLoaded(true);
   }, []);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => (
-        <Modal isOpen={() => setModalOpen(true)} onClose={handleCloseModal}>
-          ty
-        </Modal>
-      ))
-      .catch(() => (
-        <Modal isOpen={() => setModalOpen(true)} onClose={handleCloseModal}>
-          Sorry
-        </Modal>
-      ));
-  };
 
   return (
     <section
@@ -53,12 +41,10 @@ const ContactSection = () => {
         <h2 className="text-5xl text-white font-bold mb-7">Contact me</h2>
 
         <form
-          data-netlify="true"
-          // method="post"
+          ref={form}
+          onSubmit={sendEmail}
           className="flex flex-col gap-5 xl:text-base text-xl"
-          onSubmit={handleSubmit}
         >
-          {/* <Honeypot /> */}
           <div className="flex sm:flex-col gap-3">
             <input type="text" name="name" placeholder="Name" />
             <input type="email" name="email" placeholder="Email" />
