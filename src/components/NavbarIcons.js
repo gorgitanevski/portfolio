@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-const NavbarIcons = ({ display }) => {
+const NavbarIcons = () => {
   const links = [
     { label: "Home", to: "/", icon: <AiOutlineHome /> },
     { label: "About", to: "about", icon: <AiOutlineUser /> },
@@ -17,9 +17,7 @@ const NavbarIcons = ({ display }) => {
   ];
 
   return (
-    <div
-      className={`text-4xl text-white flex  flex-col lg:flex-row gap-3  sm:${display}`}
-    >
+    <div className={`text-4xl text-white flex  flex-col lg:flex-row gap-3`}>
       {links.map((link) => {
         return (
           <Link

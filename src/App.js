@@ -30,4 +30,4 @@ const App = () => {
 
 export default App;
 
-// vo chat gpt imam za fade i da namestam na strancite i da gi dodam proektite.
+// linkovite da gi klam vo drug fail i samo so divo da komuniciram.

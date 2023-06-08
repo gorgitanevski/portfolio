@@ -33,14 +33,19 @@ const Navbar = () => {
         <img src={imgG} alt="img-g" className="w-[80%]" />
         <p className="text-[#436D99] font-semibold text-lg">Gorgi</p>
       </div>
-      <NavbarIcons display="hidden" />
-      <NavbarIconsSocial display="hidden" />
-
+      <div className="flex sm:hidden">
+        <NavbarIcons />
+      </div>
+      <div className="flex sm:hidden">
+        <NavbarIconsSocial />
+      </div>
       {icon}
       {isOpen && (
-        <div className="absolute right-0 left-[6rem] top-[4.5rem] z-10 bg-[#040C19] w-full flex justify-around items-center p-2 slide-left z-20">
-          <NavbarIcons display="flex" />
-          <NavbarIconsSocial display="flex" />
+        <div
+          className={`absolute right-0 left-[6rem] top-[4.5rem] z-10 bg-[#040C19] w-full flex justify-around items-center p-2 slide-left z-20`}
+        >
+          <NavbarIcons />
+          <NavbarIconsSocial />
         </div>
       )}
     </div>
