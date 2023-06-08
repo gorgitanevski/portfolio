@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ContactMap from "../components/ContactMap";
+import { Navigate } from "react-router-dom";
 
 const ContactSection = () => {
   const [loaded, setLoaded] = useState(false);
@@ -8,9 +9,19 @@ const ContactSection = () => {
     setLoaded(true);
   }, []);
 
-  const handleSubmit = (formData) => {
-    // e.preventDefault();
-    console.log(formData);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => Navigate("/thank-you/"))
+      .catch((error) => alert(error));
   };
 
   return (
