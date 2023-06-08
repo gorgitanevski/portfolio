@@ -1,9 +1,20 @@
 import React, { useState, useEffect } from "react";
 import ContactMap from "../components/ContactMap";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
+import Modal from "../components/Modal";
 
 const ContactSection = () => {
   const [loaded, setLoaded] = useState(false);
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  // const handleOpenModal = () => {
+  //   setModalOpen(true);
+  // };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
 
   useEffect(() => {
     setLoaded(true);
@@ -20,8 +31,16 @@ const ContactSection = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => Navigate("/thank-you/"))
-      .catch((error) => alert(error));
+      .then(() => (
+        <Modal isOpen={() => setModalOpen(true)} onClose={handleCloseModal}>
+          ty
+        </Modal>
+      ))
+      .catch(() => (
+        <Modal isOpen={() => setModalOpen(true)} onClose={handleCloseModal}>
+          Sorry
+        </Modal>
+      ));
   };
 
   return (
