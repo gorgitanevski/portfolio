@@ -19,7 +19,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className={`gradient__bg h-screen lg:h-full flex flex-col justify-center md:justify-start md:items-center md:px-11 pl-[7rem] fade-in ${
+      className={`gradient__bg h-screen flex flex-col justify-center md:justify-start md:items-center md:px-11 pl-[7rem] fade-in ${
         loaded ? "loaded" : ""
       }`}
     >
@@ -37,7 +37,7 @@ const AboutSection = () => {
         </p>
       </div>
       <div className="stage">
-        <div className="stage-cube-cont lg:top-[10rem md:top-[27rem] md:right-[7rem] sta">
+        <div className="stage-cube-cont lg:top-[10rem] md:top-[27rem] md:right-[7rem] gradient__bg">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faSass} color="#DD0031" />
