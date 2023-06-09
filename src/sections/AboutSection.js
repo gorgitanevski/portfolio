@@ -28,7 +28,7 @@ const AboutSection = () => {
           About Me
         </h1>
         <p className="text-[#81AFDD] text-2xl lg:text-sm  leading-relaxed md:leading-loos">
-          Hello, and welcome to my portfolio! My name is Gorgi, and I am a
+          Hello and welcome to my portfolio! My name is Gorgi, and I am a
           motivated Front-End Developer with a passion for creating engaging and
           user-friendly web experiences.I am excited to join a team of
           experienced professionals who can guide and mentor me as I begin my

@@ -33,12 +33,14 @@ const ContactSection = () => {
 
   return (
     <section
-      className={`gradient__bg h-screen flex flex-row lg:flex-col justify-around items-center fade-in ${
+      className={`gradient__bg h-screen lg:h-full lg:pt-[3rem] flex flex-row lg:flex-col justify-around items-center fade-in ${
         loaded ? "loaded" : ""
       }`}
     >
       <div className="flex flex-col sm:max-w-[80%]">
-        <h2 className="text-5xl text-white font-bold mb-7">Contact me</h2>
+        <h2 className="text-5xl sm:text-4xl text-white font-bold mb-7">
+          Contact me
+        </h2>
 
         <form
           ref={form}
