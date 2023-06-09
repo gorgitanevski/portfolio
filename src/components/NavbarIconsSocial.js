@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineFacebook,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 const NavbarIconsSocial = ({ additionalClass }) => {
   return (
