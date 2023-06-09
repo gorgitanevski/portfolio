@@ -37,7 +37,7 @@ const AboutSection = () => {
         </p>
       </div>
       <div className="stage">
-        <div className="stage-cube-cont lg:top-[10rem] md:top-[27rem] md:right-[7rem] gradient__bg">
+        <div className="stage-cube-cont md:top-[27rem] md:right-[7rem]">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faSass} color="#DD0031" />
