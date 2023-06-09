@@ -19,7 +19,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className={`gradient__bg h-screen flex flex-col justify-center md:justify-start md:items-center md:px-11 pl-[7rem] fade-in ${
+      className={`gradient__bg h-screen lg:h-full flex flex-col justify-center md:justify-start md:items-center md:px-11 pl-[7rem] fade-in ${
         loaded ? "loaded" : ""
       }`}
     >
