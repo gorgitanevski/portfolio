@@ -11,7 +11,7 @@ const SkilsSection = () => {
 
   return (
     <section
-      className={`gradient__bg h-screen lg:full flex lg:flex-col flex-row justify-around items-center lg:gap-0 gap-11 pt-11 px-[7rem] fade-in ${
+      className={`gradient__bg h-screen lg:h-full flex lg:flex-col flex-row justify-around items-center lg:gap-0 gap-11 pt-11 px-[7rem] fade-in ${
         loaded ? "loaded" : ""
       }`}
     >
@@ -22,7 +22,7 @@ const SkilsSection = () => {
         <p className="text-[#81AFDD] text-3xl md:text-lg my-text sm:leading-7 leading-10">
           I have expiriance including technologies like html,css3,javascript,
           react. react toolkit, sass, git, etc. visit my Linkedin profile. Also
-          you can checkout my cv on this{" "}
+          you can checkout my cv on this
           <Link to="/cv" className="border-b border-[#81AFDD]">
             link.
           </Link>
