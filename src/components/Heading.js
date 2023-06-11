@@ -37,15 +37,14 @@ const projects = [
   {
     image: coffeShop,
     title: "Coffe shop",
-    about: "Web application developed with react, tailwind css and redux",
-    // link: "https://dulcet-quokka-a18b0b.netlify.app/",
+    about: "E commerce website developed with react, tailwind css and redux",
     git_hub: "https://github.com/gorgitanevski/coffe_shop",
   },
   {
     image: fastfoodImg,
     title: "Fast food shop",
-    about: "Web application developed with react, mui, tailwind css and redux",
-    link: "",
+    about:
+      "E commerce website developed with react, mui, tailwind css and redux",
     git_hub: "https://github.com/gorgitanevski/fastfood_app",
   },
   {
