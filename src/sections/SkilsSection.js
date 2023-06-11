@@ -45,6 +45,7 @@ const SkilsSection = () => {
           <Item>Redux-toolkit</Item>
           <Item>Ajax</Item>
           <Item>Parcel</Item>
+          <Item>Tailwind Css</Item>
           <Item>SCSS/Sass</Item>
           <Item>Bootstrap</Item>
         </div>
