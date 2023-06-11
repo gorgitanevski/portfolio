@@ -29,5 +29,3 @@ const App = () => {
 };
 
 export default App;
-
-// linkovite da gi klam vo drug fail i samo so divo da komuniciram.

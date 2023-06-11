@@ -42,7 +42,7 @@ const Navbar = () => {
       {icon}
       {isOpen && (
         <div
-          className={`absolute right-0 left-[6rem] top-[4.5rem] z-10 bg-[#040C19] w-full flex justify-around items-center p-2 slide-left z-20`}
+          className={`absolute right-0 left-[6rem] top-[4.5rem] z-10 bg-[#040C19] w-full flex justify-around items-center p-2 slide-left`}
         >
           <NavbarIcons />
           <NavbarIconsSocial />

@@ -11,7 +11,7 @@ const NavbarIcons = () => {
   const links = [
     { label: "Home", to: "/", icon: <AiOutlineHome /> },
     { label: "About", to: "about", icon: <AiOutlineUser /> },
-    { label: "Skils", to: "skils", icon: <AiOutlineSetting /> },
+    { label: "Skills", to: "skils", icon: <AiOutlineSetting /> },
     { label: "Projects", to: "projects", icon: <AiOutlineEye /> },
     { label: "Contact", to: "contact", icon: <AiOutlineMail /> },
   ];

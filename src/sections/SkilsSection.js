@@ -17,12 +17,15 @@ const SkilsSection = () => {
     >
       <div className="max-w-[45%] sm:max-w-[67%] lg:max-w-none sm:mb-3">
         <h1 className="text-white text-5xl lg:text-3xl font-bold lg:text-center  mb-7">
-          My Skils
+          My Skills
         </h1>
         <p className="text-[#81AFDD] text-3xl md:text-lg my-text sm:leading-7 leading-10">
-          I have expiriance including technologies like html,css3,javascript,
-          react. react toolkit, sass, git, etc. visit my Linkedin profile. Also
-          you can checkout my cv on this
+          I have experience including technologies like html, css3, javascript,
+          react,redux, redux-toolkit, sass, git, etc. Visit my{" "}
+          <Link to="https://www.linkedin.com/in/gorgi-tanevski-99086a27a/">
+            Linkedin{" "}
+          </Link>{" "}
+          profile. Also you can checkout my C.V. on this{" "}
           <Link to="/cv" className="border-b border-[#81AFDD]">
             link.
           </Link>
