@@ -36,7 +36,7 @@ const projects = [
   },
   {
     image: coffeShop,
-    title: "Coffe shop",
+    title: "Coffee shop",
     about: "E commerce website developed with react, tailwind css and redux",
     git_hub: "https://github.com/gorgitanevski/coffe_shop",
   },
@@ -65,7 +65,7 @@ const projects = [
 ];
 
 const Paragraph = () => (
-  <p className="text-white font-semibold italic">Expiriance with</p>
+  <p className="text-white font-semibold italic">Experience with</p>
 );
 
 const Heading = ({ children }) => (
