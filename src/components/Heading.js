@@ -13,7 +13,7 @@ const Item = ({ children }) => (
 const ButtonCart = () => {
   return (
     <button
-      className={`border text-semibold px-6 py-1 bg-[#042C54] text-white text-xl transition duration-300 ease-in-out hover:bg-white hover:text-black mt-7 self-end rounded-[30px] self-center`}
+      className={`border text-semibold px-6 py-1 bg-[#042C54] text-white text-xl transition duration-300 ease-in-out hover:bg-white hover:text-black mt-7 self-end rounded-[30px] self-cente`}
     >
       <Link to="https://thunderous-genie-84971f.netlify.app/"></Link>
     </button>
@@ -37,7 +37,7 @@ const projects = [
   {
     image: coffeShop,
     title: "Coffee shop",
-    about: "E commerce website developed with react, tailwind css and redux",
+    about: "E commerce website developed with React,RTK Query and Tailwind css",
     git_hub: "https://github.com/gorgitanevski/coffe_shop",
   },
   {
