@@ -9,6 +9,14 @@ const SkilsSection = () => {
     setLoaded(true);
   }, []);
 
+  const preuzmiCV = (e) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.href = "/static/media/my_cv.2bad74bd0388ef6c12dd.pdf";
+    link.download = "/static/media/my_cv.2bad74bd0388ef6c12dd.pdf";
+    link.click();
+  };
+
   return (
     <section
       className={`gradient__bg h-screen lg:h-full flex lg:flex-col flex-row justify-around items-center lg:gap-0 gap-11 pt-11 px-[7rem] fade-in ${
@@ -26,7 +34,11 @@ const SkilsSection = () => {
             Linkedin{" "}
           </Link>{" "}
           profile. Also you can checkout my C.V. on this{" "}
-          <Link to="/cv" className="border-b border-[#81AFDD]">
+          <Link
+            // to="/cv"
+            onClick={preuzmiCV}
+            className="border-b border-[#81AFDD]"
+          >
             link.
           </Link>
         </p>
