@@ -12,6 +12,9 @@ const NavbarIconsSocial = ({ additionalClass }) => {
       <Link to="https://www.linkedin.com/in/gorgi-tanevski-99086a27a/">
         <AiFillLinkedin />
       </Link>
+      <Link to="https://gorgitanevski_cv.tiiny.site/">
+        <p className="text-xs font-bold">C.V</p>
+      </Link>
     </div>
   );
 };

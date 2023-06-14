@@ -35,8 +35,8 @@ const SkilsSection = () => {
           </Link>{" "}
           profile. Also you can checkout my C.V. on this{" "}
           <Link
-            // to="/cv"
-            onClick={preuzmiCV}
+            to="https://gorgitanevski_cv.tiiny.site/"
+            // onClick={preuzmiCV}
             className="border-b border-[#81AFDD]"
           >
             link.
