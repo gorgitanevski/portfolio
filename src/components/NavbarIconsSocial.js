@@ -1,4 +1,7 @@
 import React from "react";
+
+import cv from "../assets/image/gorgitanevski_cv.pdf";
+
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 const NavbarIconsSocial = ({ additionalClass }) => {
@@ -12,9 +15,10 @@ const NavbarIconsSocial = ({ additionalClass }) => {
       <Link to="https://www.linkedin.com/in/gorgi-tanevski-99086a27a/">
         <AiFillLinkedin />
       </Link>
-      <Link to="https://gorgitanevski_cv.tiiny.site/">
-        <p className="text-xs font-bold">C.V</p>
-      </Link>
+
+      <a href={cv} className="text-xs font-bold" download>
+        C.V
+      </a>
     </div>
   );
 };
